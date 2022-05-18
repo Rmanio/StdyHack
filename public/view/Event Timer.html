@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="/css/Event Timer.css">
+
+    <title>Event Timer</title>
+    <script src="/js/Event Timer.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="head-content">
+        <div id="text-value">
+            <label for="timer-title">For What</label>
+            <br>
+            <input type="text" id="timer-title" placeholder="For example: Happy New Year">
+        </div>
+        <div id="date-values">
+            <div id="required-inputs">
+                <label for="required-inputs"> REQUIRED</label>
+                <br>
+                <input type="number" id="first-print" placeholder="Day">
+                <input type="number" id="second-print" placeholder="Month">
+                <input type="number" id="third-print" placeholder="Year">
+            </div>
+            <div id="other-inputs">
+                <label for="other-inputs">BY DEFAULT(00:00:00) </label>
+                <br>
+                <input type="number" id="fourth-print" placeholder="Hours">
+                <input type="number" id="fifth-print" placeholder="Minutes">
+                <input type="number" id="sixth-print" placeholder="Seconds">
+            </div>
+        </div>
+        <div id="timer-buttons">
+            <button onclick="getValues()" id="start-button">Start</button>
+            <button id="stop-button">Stop</button>
+        </div>
+    </div>
+        <div class="center">
+            <h1>For <span id="timer-title-here">"something"</span> remains:</h1>
+            <hr>
+            <h1 id="timer"></h1>
+        </div>
+</div>
+
+</body>
+</html>

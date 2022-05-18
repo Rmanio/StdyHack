@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="/js/cookieTask.js"></script>
+    <script src="https://kit.fontawesome.com/fb3ab407f3.js" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/registerstyle.css">
+    <title>CookieCheck</title>
+</head>
+<body onload="checkCookie()">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigation-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">StudyHack</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/education" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Education
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/schedule">Schedule</a></li>
+                        <li><a class="dropdown-item" href="/education">Grade Calculator</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/materials">Materials</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item active" href="/timer">Timer</a></li>
+                        <li><a class="dropdown-item" href="/calculato">Math Calculator</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="badge rounded-pill bg-secondary" id="nav-button" href="/register">Profile</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="signup col-sm-6">
+            <div class="vertical"></div>
+            <h1>Sign Up</h1>
+            <form name="sform" class="sform" method="get">
+                <label>Nickname</label>
+                <input name="snickname" type="text" placeholder="Write your nickname" class="dan" required
+                       autocomplete="off">
+                <label>Password</label>
+                <input name="spassword" type="password" placeholder="Enter password" class="dan" required>
+                <input type="button" class="singup dan" value="Sign Up" onclick="checkInfo(this.form)">
+            </form>
+        </div>
+        <div class="register col-sm-6">
+            <h1>Register</h1>
+            <form name="rform" class="rform" method="get">
+                <label>Nickname</label>
+                <input name="rnickname" type="text" placeholder="Write your nickname" class="dan" required
+                       autocomplete="off">
+                <label>Password</label>
+                <input name="rpassword" type="password" placeholder="Enter password" class="dan" required
+                       autocomplete="off">
+                <label>Confirm password</label>
+                <input name="rcpassword" type="password" class="dan" placeholder="Enter password">
+                <label>Email or Phone number</label>
+                <input name="contactinfo" type="text" placeholder="Enter email or phone number" class="dan"
+                       autocomplete="off">
+                <input type="submit" class="register_button dan" value="Register" onclick="setCookie(this.form)">
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container" id="footer-up">
+        <div class="row">
+            <form class="col-5" id="footer-up-form">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+            <div class="col-5 offset-1" id="footer-up-textarea">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                    <label for="floatingTextarea2" class="text-secondary">Comments</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="footer-down">
+        <h6 class="text-secondary col-4 ms-3">&copy; AstanaIT University</h6>
+        <div class="col-3 text-center" id="footer-link-list">
+            <a href="#">Home | </a>
+            <a href="#">Products | </a>
+            <a href="#">Contacts | </a>
+            <a href="#">Help </a>
+        </div>
+        <div class="col-4 text-end" id="footer-icon-list">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

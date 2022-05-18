@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/Materials.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <title>Materials</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navigation-nav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">StudyHack</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/news">News</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/education" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Education
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="/schedule">Schedule</a></li>
+                        <li><a class="dropdown-item" href="/education">Grade Calculator</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/materials">Materials</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle active" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Features
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item active" href="/timer">Timer</a></li>
+                        <li><a class="dropdown-item" href="/calculato">Math Calculator</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <a class="badge rounded-pill bg-secondary" id="nav-button" href="/register">Profile</a>
+        </div>
+    </div>
+</nav>
+<style>
+    /*Navbar*/
+    .navbar{
+        z-index: 100;
+        background-color: #333; /* Black background color */
+        position: fixed; /* Make it stick/fixed */
+        top: 0; /* Stay on top */
+        width: 100%; /* Full width */
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
+
+    }
+    #navbar {
+        z-index: 100;
+        background-color: #333; /* Black background color */
+        position: fixed; /* Make it stick/fixed */
+        top: 0; /* Stay on top */
+        width: 100%; /* Full width */
+        transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    }
+
+    /* Style the navbar links */
+    #navbar a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+    }
+
+    #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    .container-css{
+        margin-top: 70px;
+    }
+    footer{
+        padding-top: 2vw;
+        height: 200px;
+        background: rgb(34, 40, 49);
+        color: rgb(238, 238, 238);
+        font-size: 1.3rem;
+
+    }
+    #footer-up{
+        padding-bottom: 2vw ;
+    }
+    #footer-up-textarea textarea{
+        height: 10vw;
+    }
+
+    #footer-down{
+        margin-top: 3.33vw;
+    }
+
+    #footer-down h6{
+        font-size: 1.3rem;
+    }
+    #footer-link-list a{
+        color: gray;
+    }
+    #footer-icon-list a{
+        color: rgb(238, 238, 238);
+        font-size: 1.7rem;
+    }
+</style>
+
+<div class="row row-cols-2 row-cols-md-4 g-2 text-center container-css h-100">
+    <div class="col col-css">
+        <div class="card h-100 rounded-pill border border-3 shadow-lg p-3 mb-5 bg-body rounded card-css">
+            <img src="https://i.pinimg.com/originals/08/48/d7/0848d76ccff9cc01fd0184d0bc698b27.webp" class="card-img-top rounded-pill" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Motivational</h5>
+                <p class="card-text">
+                    <ul class="text-start">
+                <li>Relax your brain</li>
+                <li>Be motivated</li>
+                <li>achieve your goals</li>
+            </ul>
+                 </p>
+                <a  class="btn btn-primary" href="#motiv">Let's motivate</a>
+            </div>
+        </div>
+    </div>
+    <div class="col col-css">
+        <div class="card h-100 rounded-pill border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <img src="https://bookslikethisone.com/wp-content/uploads/2020/08/It-Ends-With-Us-735-2-150x225.jpg" class="rounded-pill card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Books for IT</h5>
+                <p class="card-text"><ul class="text-start">
+                <li>Programming languages</li>
+                <li>Databases</li>
+                <li>Special topics</li>
+            </ul></p>
+                <a href="#containerBookIT" class="btn btn-primary" >Let's study</a>
+            </div>
+        </div>
+    </div>
+    <div class="col col-css">
+        <div class="card h-100 rounded-pill border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <img src="https://www.macmillan.ru/upload/resizer/12/14797_234x_126682843c9a03042296754bd4809aea.jpg?1388250517" class=" rounded-pill card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">for IELTS</h5>
+                <p class="card-text">
+                    <ul class="text-start">
+                <li>Understand the test format</li>
+                <li>Be aware of the exam time constraints</li>
+                <li>Develop your IELTS strategies</li>
+
+            </ul></p>
+                <a href="#ForIElTS" class="btn btn-primary">Let's study</a>
+            </div>
+        </div>
+    </div>
+    <div class="col col-css">
+        <div class="card h-100 rounded-pill border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <img src="https://www.jamieyorkpress.com/wp-content/uploads/2017/02/High-School-Set-Image.jpg" class="rounded-pill card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">For math</h5>
+                <p class="card-text text-left">
+                    <ul class="text-start ">
+                <li>Try a Planning Approach</li>
+                <li>Read books</li>
+                <li>Practice Online</li>
+                </ul>
+                </p>
+                <a href="#containerBookMath" class=" btn btn-primary">Let's study</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Motivational section-->
+<div class="card-group motiv-css" id="motiv">
+    <div class="card border border-3 shadow-lg p-3 mb-5 bg-body ">
+        <img src="https://miro.medium.com/max/800/0*3TPL6NiHnvytCUMt." class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">“One day, all your hard work will pay off.”</p>
+        </div>
+    </div>
+    <div class="card border border-3 shadow-lg p-3 mb-5 bg-body">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">“The earlier you start working on something, the earlier you will see results.”</p>
+        </div>
+        <img src="https://examstudyexpert.com/wp-content/uploads/2021/07/Reasons-why-pinboard-small-1024x724.jpg" class="card-img-bottom" alt="...">
+    </div>
+    <div class="card border border-3 shadow-lg p-3 mb-5 bg-body">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjzn7gr_gC2Btd29wWBMztQQ6v5Za19KI-1Q&usqp=CAU" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title"></h5>
+            <p class="card-text">Don't expect the results without the work. “The only place where success comes before work is in the dictionary.”</p>
+
+        </div>
+    </div>
+</div>
+<!-- motivational section end-->
+
+
+<!--Books for IT start-->
+<div class="containerBookIT-css" style="display: inline-block;" id="containerBookIT">
+<div class="row row-cols-2 row-cols-md-4 g-2 text-center containerBookIT-css">
+    <!--For beginners start-->
+    <div class="col ">
+        <div class="card h-100 border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card-body">
+                <h5 class="card-title">For beginners</h5>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/dp/3642300472?tag=uuid10-20">
+                            <img src="https://m.media-amazon.com/images/I/41HFPUaHhqL.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Scientific Research in Information Systems</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/dp/1983154830?tag=uuid10-20">
+                            <img src="https://m.media-amazon.com/images/I/51bAWBzQd3L._SL500_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Computers made easy</h5>
+                                 </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/Blockchain-Beginners-Understanding-Revolutionary-Cryptocurrency/dp/1974564509?tag=uuid10-20">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51rCKzHJBuL.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Blockchain for Beginners</h5>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/dp/1945051086?tag=uuid10-20">
+                            <img src="https://m.media-amazon.com/images/I/51KvX45JnnL.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">ITSM</h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--For beginners end-->
+    <!--For Juniors start-->
+    <div class="col">
+        <div class="card h-100 border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card-body">
+                <h5 class="card-title">Junior</h5>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100"><a href="https://www.amazon.ca/gp/product/0132350882/ref=as_li_tl?ie=UTF8&tag=stemmlerjs09-20&camp=15121&creative=330641&linkCode=as2&creativeASIN=0132350882&linkId=63a7fb47960db0590eabb58edf25aee5">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/41xShlnTZTL._SX376_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Clean Code: A Handbook of Agile Software Craftsmanship</h5>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.ca/gp/product/0137081073/ref=as_li_tl?ie=UTF8&tag=stemmlerjs09-20&camp=15121&creative=330641&linkCode=as2&creativeASIN=0137081073&linkId=c172b446308df330b348e0db03e30168">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51uO-K+V5dL._SX258_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Clean Coder, The: A Code of Conduct for Professional Programmers </h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.ca/gp/product/0134757599/ref=as_li_tl?ie=UTF8&tag=stemmlerjs09-20&camp=15121&creative=330641&linkCode=as2&creativeASIN=0134757599&linkId=cd665cc1a6483955a2d51dd2d1a576d1">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/41trAWIzKAL._SX198_BO1,204,203,200_QL40_ML2_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Refactoring: Improving the Design of Existing Code</h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.ca/gp/product/0321125215/ref=as_li_tl?ie=UTF8&tag=stemmlerjs09-20&camp=15121&creative=330641&linkCode=as2&creativeASIN=0321125215&linkId=c16807ab5ed838159eb3a89a339459a6">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51nQaF77Y4L._SX376_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Domain-Driven Design: Tackling Complexity in the Heart of Software</h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- For Junior end-->
+<!--For middle start-->
+    <div class="col">
+        <div class="card h-100 border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card-body">
+                <h5 class="card-title">Middle</h5>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100"><a href="https://www.amazon.com/Continuous-Delivery-Deployment-Automation-Addison-Wesley/dp/0321601912">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51NbiDn81NL._SX385_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Continuous Delivery: Reliable Software Releases through Build</h5>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/Rework-Jason-Fried/dp/0307463745">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/41woojfwaaL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Rework</h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/Release-Design-Deploy-Production-Ready-Software/dp/1680502395">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/414CRjLjwgL._SX403_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Release It!: Design and Deploy Production-Ready Software</h5>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.pl/Head-First-Design-Patterns-Object-Oriented/dp/149207800X">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51rmlxN57sL._SX430_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Head First Design Patterns: Building Extensible and Maintainable Object-Oriented Software</h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+<!--For Middle end-->
+    <!--For Senior start-->
+    <div class="col">
+        <div class="card h-100  border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="card-body">
+                <h3 class="card-title">Senior</h3>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/Zero-Bugs-Program-Kate-Thompson/dp/1530158680?tag=javamysqlanta-20">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/61DbOXo7NlL._SX404_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Zero Bugs: and Program Faster</h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="https://www.amazon.com/Pragmatic-Programmer-journey-mastery-Anniversary/dp/0135957052/?tag=javamysqlanta-20">
+                            <img src="https://images-na.ssl-images-amazon.com/images/I/51W1sBPO7tL._SX380_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">The Pragmatic Programmer</h5>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                            <a href="">
+                            <img src="https://1.bp.blogspot.com/-xNJglR7rXB4/XgXWYzJFWiI/AAAAAAAAcDc/Ch-xL_CLD6Yv9x7_etuoTlPZbZg8UqAswCEwYBhgL/s320/Refactoring%2BBook%2Bfrom%2BMartin%2BFowler.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Refactoring: Improving the Design of Existing Code</h5>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100"><a href="">
+                            <img src="https://1.bp.blogspot.com/-BNETn7efmbk/Xqwfv8CFLKI/AAAAAAAAetU/6BSjK-u-3vk3daboflcJPF_fVzcntHptACLcBGAsYHQ/s320/Object-oriented%2Banalysis%2Band%2Bdesign%2Bby%2BGrady%2BBooch.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Object-oriented analysis and design by Grady Booch</h5>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+    </div>
+<!-- Books for IT end-->
+
+    <!--For IELTS start-->
+    <div class="row row-cols-1 row-cols-md-3 g-4 ForIELTS" id="ForIElTS">
+        <!--<div class="col border border-1 shadow-lg p-0 rounded">
+            <img src="https://www.britishcouncilfoundation.id/sites/default/files/image_1-best_way_to_prepare_for_the_ielts_exam.jpg" class="card-img-top" alt="...">
+            <div class="card overlay">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+        </div>-->
+        <div class="card bg-dark text-white border border-1 shadow-lg p-0 rounded">
+            <img src="https://www.ielts.org/-/media/test_format_simple.ashx?iar=0&hash=2010E38F2345A39DA988EAB41A8E3E65" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white border border-1 shadow-lg p-0 rounded">
+            <img src="https://www.britishcouncilfoundation.id/sites/default/files/image_1-best_way_to_prepare_for_the_ielts_exam.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white border border-1 shadow-lg p-0 rounded">
+            <img src="https://scontent.ftse2-1.fna.fbcdn.net/v/t1.18169-9/16864970_999890970155547_5654353987450462365_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=e3f864&_nc_ohc=FsNSKH5-cnsAX-KHAeD&_nc_ht=scontent.ftse2-1.fna&oh=00_AT-oFw2IdbsZcL9J-0sXo50FloC_O_dFs0NTSXR6M4pIYw&oe=629537EA" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white border border-1 shadow-lg p-0 rounded">
+            <img src="https://static.yocket.in/files/documents/uncategorized/6b60dacd-d177-44a8-9858-3b8841cdb875.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white border border-1 shadow-lg p-0 rounded">
+            <img src="https://www.inspiruseducation.com/wp-content/uploads/2019/06/info_7.jpg" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+        <div class="card bg-dark text-white border border-1 shadow-lg p-0 rounded">
+            <img src="https://ieltsmaterial.com/wp-content/uploads/2021/08/IELTS-Books.png" class="card-img" alt="...">
+            <div class="card-img-overlay">
+                <h5 class="card-title"></h5>
+                <p class="card-text"></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- For IELTS end-->
+    <!--Books for Math start-->
+    <div class="containerBookMath-css" style="display: inline-block;" id="containerBookMath">
+        <div class="row row-cols-2 row-cols-md-3 g-2 text-center containerBookMath-css">
+            <div class="col ">
+                <div class="card h-100 border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">High math</h5>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card h-100">
+                                    <a href="https://www.amazon.com/gp/product/0547165099/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0547165099&linkCode=as2&tag=mathblogcom-20&linkId=dd4269f567866088356ceecc82de9e0b">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/51VXF4turJL._SX342_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Contemporary Abstract Algebra</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/gp/product/0471433349/ref=as_li_tl?ie=UTF8&tag=mathblogcom-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0471433349&linkId=3dff637b02f37453cf6e5ce469b8701a">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/41HVsgLabzL._SX404_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Abstract Algebra, 3rd Edition</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/gp/product/0691130884/ref=as_li_tl?ie=UTF8&tag=mathblogcom-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0691130884&linkId=1589cf3896b5196583786bd71059a8a8">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/51rYYJKHLIL._SX348_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Calculus Lifesaver: All the Tools you Need to Excel at Calculus</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/gp/product/9810211392/ref=as_li_tl?ie=UTF8&tag=mathblogcom-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=9810211392&linkId=0025397db344309341696a69e383f176">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/41MHu1XDC0L._SX331_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Principles and Techniques in Combinatorics</h5>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">For big data analytics</h5>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/Big-Data-Concepts-Technology-Architecture-dp-1119701821/dp/1119701821?_encoding=UTF8&me=&qid=1617550805&linkCode=sl1&tag=365blottochal-20&linkId=830b23b02dda3aa92ef8316b821574c0&language=en_US&ref_=as_li_ss_tl">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/514nUp6lorL._SX312_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Big Data: Concepts, Technology, and Architecture</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/Big-Data-Management-Governance-Principles/dp/3110662914?dchild=1&keywords=big+data+for+business&qid=1617549728&sr=8-1-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEyS08yNUlZUVgzVFUzJmVuY3J5cHRlZElkPUEwNDMyMDM1MVc5V1haN0RPRUFVRSZlbmNyeXB0ZWRBZElkPUEwNjE1NjIzM0s4UUFMTVRPMEQ5WiZ3aWRnZXROYW1lPXNwX2F0ZiZhY3Rpb249Y2xpY2tSZWRpcmVjdCZkb05vdExvZ0NsaWNrPXRydWU%3D&linkCode=sl1&tag=365blottochal-20&linkId=29249069dfcb89dad3f76365d7bee622&language=en_US&ref_=as_li_ss_tl">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/51IlEATiDQL._SX346_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Big Data Management: Data Governance Principles for Big Data Analytics</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/Big-Data-Analytics-Leverage-Programming/dp/1786466457?dchild=1&keywords=big+data&qid=1617551253&sr=8-65&linkCode=sl1&tag=365blottochal-20&linkId=3f00984555a0a14d93f349da22cf8dde&language=en_US&ref_=as_li_ss_tl">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/51paKeyAKLL._SX404_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Big Data Analytics with R: Leverage R Programming to uncover hidden patterns in your Big Data</h5>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/Spark-Definitive-Guide-Processing-Simple/dp/1491912219?dchild=1&keywords=big+data&qid=1617551253&sr=8-88&linkCode=sl1&tag=365blottochal-20&linkId=43fb5ed63635308ae0690e8afa1e146c&language=en_US&ref_=as_li_ss_tl">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/51u80Ra18-L._SX379_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Spark: The Definitive Guide: Big Data Processing Made Simple</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 border border-3 shadow-lg p-3 mb-5 bg-body rounded">
+                    <div class="card-body">
+                        <h5 class="card-title">For alghoritms</h5>
+                        <div class="row row-cols-1 row-cols-md-2 g-4">
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.com/gp/product/0262033844/ref=as_li_tl?ie=UTF8&tag=mathblogcom-20&camp=1789&creative=9325&linkCode=as2&creativeASIN=0262033844&linkId=a878537f6d3e9722f90686b64fe8d2a2">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/41T0iBxY8FL._SX440_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Introduction to Algorithms, 3rd Edition</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.in/dp/819324527X?tag=guru99-21&geniuslink=true">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/417ExARdRYL._SX384_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Data Structures And Algorithms Made Easy</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.in/dp/032157351X?tag=guru99-21&geniuslink=true">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/41a4YqyJv4S._SX400_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Algorithms</h5>
+                                    </div>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card h-100"><a href="https://www.amazon.in/dp/0999282905?tag=guru99-21&geniuslink=true">
+                                    <img src="https://images-na.ssl-images-amazon.com/images/I/412ayWL6JnS._SX331_BO1,204,203,200_.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Algorithms Illuminted: The Basics: 1</h5>
+                                    </div></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Books for Math end-->
+<!--Footer start-->
+<footer>
+    <div class="container" id="footer-up">
+        <div class="row">
+            <form class="col-5" id="footer-up-form">
+                <div class="mb-3 row border-shadow-white">
+                    <label class="col-sm-2 col-form-label">Email</label>
+                    <div class="col-sm-10">
+                      <!--<input type="text" readonly class="form-control-plaintext text-light" id="staticEmail" value="userLogin@example.com">-->
+                        <input type="text" class="form-control"  placeholder="userLogin@example.com">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                    <div class="col-sm-10">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Enter your password">
+                    </div>
+                </div>
+                <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
+            <div class="col-5 offset-1" id="footer-up-textarea">
+                <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"></textarea>
+                    <label for="floatingTextarea2" class="text-secondary">Comments</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row" id="footer-down">
+        <h6 class="text-secondary col-4 ms-2">&copy; AstanaIT University</h6>
+        <div class="col-3 text-center" id="footer-link-list">
+            <a href="#">Home | </a>
+            <a href="#">Products | </a>
+            <a href="#">Contacts | </a>
+            <a href="#">Help </a>
+        </div>
+        <div class="col-4 text-end" id="footer-icon-list">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+</footer>
+</div>
+</body>
+</html>
